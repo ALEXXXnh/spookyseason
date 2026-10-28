@@ -1,11 +1,13 @@
-# Hope lost
+# SpookySeason
 Web game, where ghosts follow you and you may find the secret buttons on the page, wathever how far can the ghosts go over your screen?
 play here: [SpookySeason](https://alexxxnh.github.io/spookyseason/)
 
 ## Content
 * A "character"
 * Animated phantoms that follow the cursor
-* Music kinda related to the phantoms
+* Background music
+* Horror images
+* Sus things
 * A minigame where you can tap tap to listen cute sounds 
 * My personal mark with job application jumpscare and an extra
 * Sound effects

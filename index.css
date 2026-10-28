@@ -23,6 +23,7 @@ body{
     position: absolute;
     width: fit-content;
     z-index: 300;
+    pointer-events: none;
 }
 .play{
     position: absolute;
@@ -37,6 +38,197 @@ body{
 .play:hover{
     color: #ffffff;
 }
+
+
+@keyframes time{
+    0%{
+        filter: opacity(0%);
+    }
+    70%{
+        filter: opacity(10%);
+    }
+    99%{
+        filter: opacity(100%);
+    }
+    100%{
+        filter: opacity(0%);
+        display: none;
+    }
+}
+
+
+.tx12{
+    position: absolute;
+    background-color: #9c0303;
+    width: 100%;
+    animation: time 18s;
+    filter: opacity(0%);
+    
+}
+
+.tx13{
+    position: absolute;
+    background-color: #9c0303;
+    width: 100%;
+    animation: time 38s;
+    filter: opacity(0%);
+}
+@keyframes timeimg{
+    0%{
+        filter: opacity(0%);
+    }
+    80%{
+        filter: opacity(2%);
+    }
+    90%{
+        filter: opacity(4%);
+    }
+    100%{
+        filter: opacity(100%);
+    }
+}
+.bksc{
+    position: absolute;
+    width: 100%;
+    background-color: #0000;
+    z-index: 51;
+    animation: timeimg 87s;
+    filter: opacity(0%);
+    pointer-events: none;
+}
+.im1{
+    position: absolute;
+    width: 100%;
+    animation: timeimg 50s;
+    filter: opacity(0%);
+    z-index: 50;
+    pointer-events: none;
+}
+.im2{
+    position: absolute;
+    width: 60%;
+    top: 0%;
+    left: 40%;
+    animation: timeimg 58s;
+    filter: opacity(0%);
+    z-index: 50;
+    pointer-events: none;
+}
+.im3{
+    position: absolute;
+    width: 50%;
+    top: 0%;
+    left: 0%;
+    animation: timeimg 65s;
+    filter: opacity(0%);
+    z-index: 50;
+    pointer-events: none;
+}
+.im4{
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    margin: 30%;
+    animation: timeimg 70s;
+    filter: opacity(0%);
+    z-index: 50;
+    pointer-events: none;
+}
+.im5{
+    position: absolute;
+    width: 40%;
+    top: 0%;
+    right: 16%;
+    animation: timeimg 75s;
+    filter: opacity(0%);
+    z-index: 50;
+    pointer-events: none;
+}
+.im6{
+    position: absolute;
+    width: 80%;
+    top: 0%;
+    right: 0%;
+    animation: timeimg 80s;
+    filter: opacity(0%);
+    z-index: 50;
+    pointer-events: none;
+}
+.im7{
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    right: 0%;
+    animation: timeimg 87s;
+    filter: opacity(0%);
+    z-index: 50;
+    pointer-events: none;
+}
+@keyframes txtan{
+    0%{
+        filter: opacity(0%);
+        display: none;
+    }
+    90%{
+        filter: opacity(0%);
+        display: none;
+    }
+    100%{
+        filter: opacity(100%);
+        display: block;
+    }
+}
+.l1{
+    position: absolute;
+    
+    background-color: #9c0303;
+    width: 100%;
+    top: 40%;
+    left: 0%;
+    font-size: 300%;
+    animation: txtan 110s;
+    filter: opacity(0%);
+    z-index: 12;
+}
+.l2{
+    
+    position: absolute;
+    background-color: #9c0303;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    font-size: 300%;
+    animation: txtan 130s;
+    filter: opacity(0%);
+    z-index: 12;
+}
+.l3{
+    position: absolute;
+    
+    background-color: #9c0303;
+    width: 100%;
+    top: 60%;
+    left: 0%;
+    font-size: 300%;
+    animation: txtan 140s;
+    filter: opacity(0%);
+    z-index: 12;
+}
+.l4{
+    position: absolute;
+    
+    background-color: #9c0303;
+    width: 100%;
+    top: 70%;
+    left: 0%;
+    font-size: 300%;
+    animation: txtan 146s;
+    filter: opacity(0%);
+    z-index: 12;
+}
+
+
+
 
 
 @keyframes follow{
@@ -156,21 +348,24 @@ body{
 @keyframes dissapear{
     from{
         color: #ffffff;
+        filter: opacity(100%);
     }
     to{
-        color: #000000;
+        filter: opacity(0%);
+        display: none;
     }
 }
 .txt{
     position: relative;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #000000;
+  
     top: 0%;
-    opacity: (40%);
-
-    font-size: 300%;
+    opacity: (0%);
+    color: transparent;
+    font-size: 400%;
     animation: dissapear 10s;
     pointer-events: none;
+    z-index: 5;
 }
 .trick{
     position: absolute;
@@ -181,6 +376,7 @@ body{
     left: 0;
     padding: 0%;
     font-size: 30px;
+    z-index: 55;
 }
 
 .trick:hover{
@@ -195,6 +391,7 @@ body{
     left: 0%;
     padding: 2%;
     font-size: 30px;
+    z-index: 55;
 }
 .img:hover{
     color: #ffffff;
